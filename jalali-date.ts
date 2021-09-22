@@ -268,10 +268,10 @@ class GregorianJalaliHelperClass {
   }
 
   getDaysPerMonth(month: number, year: number): number {
-    if (month < 6) {
+    if (month <= 6) {
       return 31;
     }
-    if (month < 11) {
+    if (month <= 11) {
       return 30;
     }
     if (this.jalCal(year).leap === 0) {
